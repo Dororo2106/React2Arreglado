@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useEffect, useState} from 'react'
-import { StyleSheet, Text, View, Image, TextInput, SafeAreaView,Button, ImageBackground} from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, SafeAreaView, ImageBackground} from 'react-native';
 import img from '../Pantallas/Logo.png';
 import imagen from '../assets/fondo.png';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Regis from './Registrarse.js';
-
+import Button from 'react-bootstrap/Button';
+{
+  /* The following line can be included in your src/index.js or App.js file */
+}
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Inicio () {
 
@@ -20,20 +24,11 @@ function Inicio () {
     style={styles.imagen}
   />
 
-<Button
-          title="Add some friends"
-          onPress={() =>
-            navigation.navigate(Regis)
-          }
-        />
 
 
-  <button id="botonR" type="button" style={styles.boton1}  onPress={() =>  this.props.navigation.navigate('Registrarse')}
->     
-      <text>Registrarse</text>
-  </button>
 
-  <button id="botonIS" type="button" style={styles.boton2} >
+
+  <button id="botonIS" type="button" style={styles.boton2} Link to="/Registrarse">
       <text>Iniciar Sesión</text>
   </button>
 
@@ -74,7 +69,7 @@ const styles = StyleSheet.create({
     {
       width:150,
       height: 150,
-      top:-207,
+      top:-358,
       position: "relative"
   
     },
@@ -123,5 +118,4 @@ const styles = StyleSheet.create({
    
   });
 
-  
   export default Inicio

@@ -23,7 +23,6 @@ function Regis () {
  </div>
  <button id="botonR" type="button" style={styles.boton1}  >
       <text>Registrarse</text>
-
   </button>
 
 
@@ -43,6 +42,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#E8EDE7',
       alignItems:"center",
       justifyContent: "center",
+      position:"absolute"
     },
     title:
     {
