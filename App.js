@@ -6,6 +6,7 @@ import Regis from './Pantallas/Registrarse';
 //import 'react-native-gesture-handler';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, SafeAreaView, ImageBackground} from 'react-native';
+import Sesion from './Pantallas/Sesion';
 
 
 import {
@@ -41,9 +42,14 @@ export default function App ()
 	<button style={styles.boton2}>
 		<Link to="/Registrarse">Registrarse</Link>
 	</button>
+  <button style={styles.boton3}>
+		<Link to="/IniciarSesion">Sesion</Link>
+	</button>
             <Routes>
                  <Route exact path='/' element={< Inicio />}></Route>
                  <Route exact path='/Registrarse' element={< Regis />}></Route>
+                 <Route exact path='/IniciarSesion' element={< Sesion />}></Route>
+
           </Routes>
 </div>
 
@@ -133,7 +139,24 @@ const styles = StyleSheet.create({
     margin:210,
     marginTop:-208,
     position: "relative"
-  }
+  },
+  boton3: {
+    border : -2,
+    width: 100,
+    height:-100,  
+    borderColor: "#EEC3FF",
+    lineHeight: -25,
+    padding:5,
+    fontSize: 12,
+    textAlign: "center",
+    color:"#EEC3FF",
+    borderRadius: 30,
+    marginBottom: -1,
+    backgroundColor:"transparent",
+    position:"absolute",
+    marginLeft:200,
+    marginTop:-40
+  },
 });
 
 
