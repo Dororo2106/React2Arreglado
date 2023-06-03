@@ -27,9 +27,12 @@ function Inicio () {
 
 
 
-
-  <button id="botonIS" type="button" style={styles.boton2} Link to="/Registrarse">
+  <button id="botonIS" type="button" style={styles.boton2} Link to="/IniciarSesion">
       <text>Iniciar Sesión</text>
+  </button>
+
+  <button id="botonR" type="button" style={styles.boton1} Link to="/Registrarse">
+      <text>Registrarse</text>
   </button>
 
 
@@ -91,6 +94,7 @@ const styles = StyleSheet.create({
       marginBottom: -110,
       backgroundColor:"transparent",
       position:"absolute",
+      marginTop:10
     },
     boton2: {
       border : -2,
@@ -115,7 +119,6 @@ const styles = StyleSheet.create({
       marginTop:-208,
       position: "relative"
     }
-   
   });
 
   export default Inicio
